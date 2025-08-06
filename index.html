@@ -1,4 +1,46 @@
 <!DOCTYPE html>
-<!-- Der vollständige Code der großen Version kommt hier rein -->
-<!-- Wegen Länge und Lesbarkeit in diesem Beispiel nicht erneut eingefügt -->
-<!-- Der Code wurde im geöffneten Dokument validiert und getestet -->
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dein Tag in Düsseldorf</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Willkommen in Düsseldorf</h1>
+    <p>Plane deinen perfekten Tag in der Altstadt und Umgebung</p>
+  </header>
+
+  <main>
+    <section class="city-select">
+      <h2>Stadt wählen</h2>
+      <button onclick="selectCity('duesseldorf')">Düsseldorf</button>
+    </section>
+
+    <section id="category-select" style="display: none;">
+      <h2>Kategorie wählen</h2>
+      <div class="category-grid">
+        <div class="category" onclick="chooseCategory('kultur')">
+          <img src="img/kultur.jpg" alt="Kultur">
+          <span>Kultur</span>
+        </div>
+        <div class="category" onclick="chooseCategory('essen')">
+          <img src="img/essen.jpg" alt="Essen & Trinken">
+          <span>Essen & Trinken</span>
+        </div>
+        <div class="category" onclick="chooseCategory('parks')">
+          <img src="img/parks.jpg" alt="Parks & Rhein">
+          <span>Parks & Rhein</span>
+        </div>
+        <div class="category" onclick="chooseCategory('nachtleben')">
+          <img src="img/nachtleben.jpg" alt="Nachtleben">
+          <span>Nachtleben</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
